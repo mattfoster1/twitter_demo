@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="twitter.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles/css/styles.css">
+	<!-- TODO: refine user search by handle. Just search for data1[i].user.screen_name in a data1.length loop -->
+
+	<title>Twitter index</title>
+</head>
+<body>
+	<div id="main" class="main">
+		<form action="#" method="" class="search_form">
+			<label for="search_term">Search for a Hashtag:</label><br>
+			<input type="text" name="search_term" id="search_term" class="search_term" value="home">
+			<br><br>
+			 <!-- <label for="handle">Refine by handle:</label> 
+			 <input type="text" name="handle" id="handle" value="">  -->
+			<!-- <br><br> -->
+			<!-- <input type="submit" value="submit" class="btn_submit"> -->
+			<div id="btn_submit-hashtag" class="btn_submit">Search for tweets</div>
+			<!-- <div id="btn_submit-handle" class="btn_submit">Search Handles</div> -->
+		</form>
+
+
+		<div id="ticker">
+			<ul>
+				<li id="ticker_sub_1" class="ticker_sub ticker_sub_1">
+					<div id="user_image" class="user_image"></div>
+					<div id="actual_copy_1" class="actual_copy_1">
+						<div id="user_name_1" class="user_name user_name_1">@sallyTraffic</div>
+						<div>said: </div>
+						<div id="tweet_copy_1" class="tweet_copy">Lorem ipsum dolor sit amet, in commodo mediocritatem pri. Accusamus definiebas id ius. Pro numquam apeirian</div>
+						<div id="hashtags_1" class="hashtags_1">
+							<ul>
+								<li>#trafficOnM25</li>
+								<li>#LoremIpsum</li>
+								<li>#radio2</li>
+							</ul>
+					</div>
+				</li> <!-- block text, potentially themed. statuses[n]user.profile_image_url for image and statuses[n].entities.urls[0].expanded_url -->
+
+
+				<li id="ticker_sub_2" class="ticker_sub ticker_sub_2"></li> <!-- could this be a button linking out to page post is on? 
+					If not, have a notification pop down from the top of the screen, showing the tweet 
+						- perhaps this could happen every ten seconds, going through the entire list? ) -->
+				<li id="ticker_sub_3" class="ticker_sub ticker_sub_3"></li> <!-- should be a ticker at the bottom of the page -->
+			</ul>
+		</div>
+
+		<div id="notification" class="notification">
+			<div id="user_name_2" class="user_name_2">@tobiasBeecher</div>
+			<div class="copy_2">said:</div>
+			<div id="tweet_copy_2" class="tweet_copy_2"></div>
+		</div>
+	</div>
+</body>
+</html>

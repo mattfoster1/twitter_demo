@@ -1,0 +1,164 @@
+@font-face {
+  font-family: 'Avenir LT Medium Oblique';
+  src: url("../../assets/fonts/Avenir/AvenirLTStd-MediumOblique.eot");
+  src: url("../../assets/fonts/Avenir/AvenirLTStd-MediumOblique.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Avenir/AvenirLTStd-MediumOblique.woff2") format("woff2"), url("../../assets/fonts/Avenir/AvenirLTStd-MediumOblique.woff") format("woff"), url("../../assets/fonts/Avenir/AvenirLTStd-MediumOblique.ttf") format("truetype"), url("../../assets/fonts/Avenir/AvenirLTStd-MediumOblique.svg#AvenirLTStd-MediumOblique") format("svg");
+  font-weight: 500;
+  font-style: italic; }
+@font-face {
+  font-family: 'Avenir LT Medium';
+  src: url("../../assets/fonts/Avenir/AvenirLTStd-Medium.eot");
+  src: url("../../assets/fonts/Avenir/AvenirLTStd-Medium.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Avenir/AvenirLTStd-Medium.woff2") format("woff2"), url("../../assets/fonts/Avenir/AvenirLTStd-Medium.woff") format("woff"), url("../../assets/fonts/Avenir/AvenirLTStd-Medium.ttf") format("truetype"), url("../../assets/fonts/Avenir/AvenirLTStd-Medium.svg#AvenirLTStd-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'Avenir LT Light Oblique';
+  src: url("../../assets/fonts/Avenir/AvenirLTStd-LightOblique.eot");
+  src: url("../../assets/fonts/Avenir/AvenirLTStd-LightOblique.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Avenir/AvenirLTStd-LightOblique.woff2") format("woff2"), url("../../assets/fonts/Avenir/AvenirLTStd-LightOblique.woff") format("woff"), url("../../assets/fonts/Avenir/AvenirLTStd-LightOblique.ttf") format("truetype"), url("../../assets/fonts/Avenir/AvenirLTStd-LightOblique.svg#AvenirLTStd-LightOblique") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+@font-face {
+  font-family: 'Avenir Book Oblique';
+  src: url("../../assets/fonts/Avenir/AvenirLTStd-BookOblique.eot");
+  src: url("../../assets/fonts/Avenir/AvenirLTStd-BookOblique.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Avenir/AvenirLTStd-BookOblique.woff2") format("woff2"), url("../../assets/fonts/Avenir/AvenirLTStd-BookOblique.woff") format("woff"), url("../../assets/fonts/Avenir/AvenirLTStd-BookOblique.ttf") format("truetype"), url("../../assets/fonts/Avenir/AvenirLTStd-BookOblique.svg#AvenirLTStd-BookOblique") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: 'Avenir LT Light';
+  src: url("../../assets/fonts/Avenir/AvenirLTStd-Light.eot");
+  src: url("../../assets/fonts/Avenir/AvenirLTStd-Light.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Avenir/AvenirLTStd-Light.woff2") format("woff2"), url("../../assets/fonts/Avenir/AvenirLTStd-Light.woff") format("woff"), url("../../assets/fonts/Avenir/AvenirLTStd-Light.ttf") format("truetype"), url("../../assets/fonts/Avenir/AvenirLTStd-Light.svg#AvenirLTStd-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'Avenir LT BlackOblique';
+  src: url("../../assets/fonts/Avenir/AvenirLTStd-BlackOblique.eot");
+  src: url("../../assets/fonts/Avenir/AvenirLTStd-BlackOblique.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Avenir/AvenirLTStd-BlackOblique.woff2") format("woff2"), url("../../assets/fonts/Avenir/AvenirLTStd-BlackOblique.woff") format("woff"), url("../../assets/fonts/Avenir/AvenirLTStd-BlackOblique.ttf") format("truetype"), url("../../assets/fonts/Avenir/AvenirLTStd-BlackOblique.svg#AvenirLTStd-BlackOblique") format("svg");
+  font-weight: 900;
+  font-style: italic; }
+@font-face {
+  font-family: 'Avenir LT Book';
+  src: url("../../assets/fonts/Avenir/AvenirLTStd-Book.eot");
+  src: url("../../assets/fonts/Avenir/AvenirLTStd-Book.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Avenir/AvenirLTStd-Book.woff2") format("woff2"), url("../../assets/fonts/Avenir/AvenirLTStd-Book.woff") format("woff"), url("../../assets/fonts/Avenir/AvenirLTStd-Book.ttf") format("truetype"), url("../../assets/fonts/Avenir/AvenirLTStd-Book.svg#AvenirLTStd-Book") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Avenir LT Heavy Oblique';
+  src: url("../../assets/fonts/Avenir/AvenirLTStd-HeavyOblique.eot");
+  src: url("../../assets/fonts/Avenir/AvenirLTStd-HeavyOblique.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Avenir/AvenirLTStd-HeavyOblique.woff2") format("woff2"), url("../../assets/fonts/Avenir/AvenirLTStd-HeavyOblique.woff") format("woff"), url("../../assets/fonts/Avenir/AvenirLTStd-HeavyOblique.ttf") format("truetype"), url("../../assets/fonts/Avenir/AvenirLTStd-HeavyOblique.svg#AvenirLTStd-HeavyOblique") format("svg");
+  font-weight: 900;
+  font-style: italic; }
+@font-face {
+  font-family: 'Avenir LT Std Oblique';
+  src: url("../../assets/fonts/Avenir/AvenirLTStd-Oblique.eot");
+  src: url("../../assets/fonts/Avenir/AvenirLTStd-Oblique.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Avenir/AvenirLTStd-Oblique.woff2") format("woff2"), url("../../assets/fonts/Avenir/AvenirLTStd-Oblique.woff") format("woff"), url("../../assets/fonts/Avenir/AvenirLTStd-Oblique.ttf") format("truetype"), url("../../assets/fonts/Avenir/AvenirLTStd-Oblique.svg#AvenirLTStd-Oblique") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: 'Avenir LT Roman';
+  src: url("../../assets/fonts/Avenir/AvenirLTStd-Roman.eot");
+  src: url("../../assets/fonts/Avenir/AvenirLTStd-Roman.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Avenir/AvenirLTStd-Roman.woff2") format("woff2"), url("../../assets/fonts/Avenir/AvenirLTStd-Roman.woff") format("woff"), url("../../assets/fonts/Avenir/AvenirLTStd-Roman.ttf") format("truetype"), url("../../assets/fonts/Avenir/AvenirLTStd-Roman.svg#AvenirLTStd-Roman") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Avenir LT Black';
+  src: url("../../assets/fonts/Avenir/AvenirLTStd-Black.eot");
+  src: url("../../assets/fonts/Avenir/AvenirLTStd-Black.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Avenir/AvenirLTStd-Black.woff2") format("woff2"), url("../../assets/fonts/Avenir/AvenirLTStd-Black.woff") format("woff"), url("../../assets/fonts/Avenir/AvenirLTStd-Black.ttf") format("truetype"), url("../../assets/fonts/Avenir/AvenirLTStd-Black.svg#AvenirLTStd-Black") format("svg");
+  font-weight: 900;
+  font-style: normal; }
+@font-face {
+  font-family: 'Avenir LT Heavy';
+  src: url("../../assets/fonts/Avenir/AvenirLTStd-Heavy.eot");
+  src: url("../../assets/fonts/Avenir/AvenirLTStd-Heavy.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Avenir/AvenirLTStd-Heavy.woff2") format("woff2"), url("../../assets/fonts/Avenir/AvenirLTStd-Heavy.woff") format("woff"), url("../../assets/fonts/Avenir/AvenirLTStd-Heavy.ttf") format("truetype"), url("../../assets/fonts/Avenir/AvenirLTStd-Heavy.svg#AvenirLTStd-Heavy") format("svg");
+  font-weight: 900;
+  font-style: normal; }
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%; }
+
+body {
+  font-family: 'Avenir LT Book'; }
+
+.main {
+  box-sizing: border-box;
+  padding: 20px 20px 20px 20px;
+  width: 100%;
+  min-height: 100%; }
+
+.search_form {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+label[for=search_term] {
+  font-size: 1.2em; }
+
+input.search_term {
+  width: 30%;
+  max-width: 400px;
+  height: 40px;
+  font-size: 30px;
+  text-align: center;
+  border: 1px solid grey;
+  align-self: flex-start;
+  border-radius: 0 30px 3px 0;
+  margin-left: -20px; }
+
+.btn_submit {
+  border: 1px solid black;
+  background: lightblue;
+  padding: 20px;
+  margin: 20px; }
+
+li.ticker_sub {
+  list-style: none; }
+
+li.ticker_sub_1 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  height: 150px;
+  align-items: center; }
+  li.ticker_sub_1 .user_image {
+    min-width: 70px;
+    height: 70px;
+    background-color: goldenrod; }
+  li.ticker_sub_1 .actual_copy_1 {
+    box-sizing: border-box;
+    padding: 0 20px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    text-align: left; }
+  li.ticker_sub_1 .user_name_1 {
+    font-size: 1.4em;
+    color: #003eff;
+    font-family: 'Avenir LT Heavy';
+    font-weight: 900;
+    margin-right: 10px; }
+  li.ticker_sub_1 .tweet_copy_1 {
+    vertical-align: center; }
+
+.notification {
+  background: lightgreen;
+  border-radius: 0px 0px 15px 15px;
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  right: 50px; }
+  .notification .user_name_2 {
+    color: red;
+    font-family: "Avenir LT Heavy"; }
+
+/*# sourceMappingURL=styles.css.map */
