@@ -81,7 +81,7 @@ body {
 
 .main {
   box-sizing: border-box;
-  padding: 20px 20px 20px 20px;
+  padding: 50px 20px 20px 20px;
   width: 100%;
   min-height: 100%; }
 
@@ -110,9 +110,19 @@ input.search_term {
 
 .btn_submit {
   border: 1px solid black;
-  background: lightblue;
-  padding: 20px;
-  margin: 20px; }
+  padding-top: 3px;
+  margin: 20px;
+  border-radius: 3px;
+  height: 80px;
+  width: 180px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 li.ticker_sub {
   list-style: none; }
@@ -124,8 +134,9 @@ li.ticker_sub_1 {
   display: -ms-flexbox;
   display: flex;
   flex-direction: row;
-  height: 150px;
-  align-items: center; }
+  height: 180px;
+  align-items: center;
+  position: relative; }
   li.ticker_sub_1 .user_image {
     min-width: 70px;
     height: 70px;
@@ -149,14 +160,40 @@ li.ticker_sub_1 {
   li.ticker_sub_1 .tweet_copy_1 {
     vertical-align: center; }
 
+.hashtags_1 {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  color: lightgray; }
+  .hashtags_1 ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    border: solid 1px lightgray;
+    box-sizing: border-box;
+    padding: 8px;
+    margin: 0 0 0 20px;
+    width: 80%; }
+    .hashtags_1 ul li {
+      margin-left: 20px; }
+
 .notification {
   background: lightgreen;
   border-radius: 0px 0px 15px 15px;
   width: 200px;
   height: 150px;
   position: absolute;
-  top: 0;
-  right: 50px; }
+  top: 0px;
+  right: 50px;
+  -webkit-transition: top 0.5s ease-in-out;
+  transition: top 0.5s ease-in-out; }
+  .notification.offScreen {
+    top: -145px; }
   .notification .user_name_2 {
     color: red;
     font-family: "Avenir LT Heavy"; }

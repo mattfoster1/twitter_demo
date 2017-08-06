@@ -3,22 +3,30 @@ $padding-left: 20px;
 
 @mixin flexbox { display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
 @mixin flexbox_row { display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; flex-direction: row; }
+@mixin flexbox_center { display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; justify-content: center; align-items: center; }
+@mixin animate($time) { -webkit-transition: top $time; transition: top $time; }
 
 body, html { margin: 0; padding: 0; width: 100%; height: 100%; }
 body { font-family: 'Avenir LT Book'; }
-.main { box-sizing: border-box; padding: 20px 20px $padding-left 20px; width: 100%; min-height: 100%; }
+.main { box-sizing: border-box; padding: 50px 20px 20px $padding-left; width: 100%; min-height: 100%; }
     .search_form { @include flexbox; flex-direction: column; align-items: center; }
         label[for=search_term] { font-size: 1.2em; }
         input.search_term { width: 30%; max-width: 400px; height: 40px; font-size: 30px; text-align: center; border: 1px solid grey; align-self: flex-start; border-radius: 0 30px 3px 0; margin-left: (-$padding-left); } 
-        .btn_submit { border: 1px solid black; background: lightblue; padding: 20px; margin: 20px; } 
+        .btn_submit { border: 1px solid black; padding-top: 3px; margin: 20px; border-radius: 3px; height: 80px; width: 180px; box-sizing: border-box; @include flexbox_center();} 
 
     li.ticker_sub { list-style: none; }
-    li.ticker_sub_1 { @include flexbox_row; height: 150px; align-items: center;
+    li.ticker_sub_1 { @include flexbox_row; height: 180px; align-items: center; position: relative;
         .user_image { min-width: 70px; height: 70px; background-color: goldenrod; }
         .actual_copy_1 { box-sizing: border-box; padding: 0 20px; @include flexbox_row(); text-align: left;  }
             .user_name_1 { font-size: 1.4em; color: #003eff; font-family: 'Avenir LT Heavy'; font-weight: 900; margin-right: 10px; }
             .tweet_copy_1 { vertical-align: center; }
+        }
+        .hashtags_1 { position: absolute; width: 100%; bottom: 0; left: 0; color: lightgray;
+            ul { @include flexbox_row(); list-style: none; border: solid 1px lightgray; box-sizing: border-box; padding: 8px; margin: 0 0 0 20px; width: 80%;
+                li { margin-left: 20px;  }
+            }
     }
-    .notification { background: lightgreen; border-radius: 0px 0px 15px 15px; width: 200px; height: 150px; position: absolute; top: 0; right: 50px; 
+    .notification { background: lightgreen; border-radius: 0px 0px 15px 15px; width: 200px; height: 150px; position: absolute; top: 0px; right: 50px; @include animate(0.5s ease-in-out);
+        &.offScreen { top: -145px; }
         .user_name_2 { color: red; font-family: 'Avenir LT Heavy' }
     }

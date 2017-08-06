@@ -97,8 +97,9 @@ function call_twitter_api() {
 		  		var data1 = JSON.parse(result)
 		  		output.push(data1.statuses[0].text);
 		  		output.push(data1.statuses[1].text);
-		  		output.push(data1.statuses[2].text);
-		  		// console.log(output);
+				output.push(data1.statuses[2].text);
+				// TODO: have the ticker elements display themselves
+		  		show_notification();
 		  		populateTicker(output);
 		  	} else {
 		  		console.log("___no data___");
@@ -109,14 +110,16 @@ function call_twitter_api() {
 }
 
 function initBtns() {
-	$('#btn_submit-hashtag').click(function(){
-		show_notification();
-	})
+	// $('#btn_submit-hashtag').click(function(){
+		
+	// })
 }
 
 function show_notification() {
 	// 1. populate with ticker_2's content
-	// 2. appear
-	// 3. disappear
-	// 4. Repeat 2&3 every 20s
+	$('#notification').removeClass('offScreen');
+	setTimeout(function(){ 
+		$('#notification').addClass('offScreen');
+	}, 2000);
+	// 4. Repeat 1-3 every 20s, but with a new tweet's copy each time
 }
